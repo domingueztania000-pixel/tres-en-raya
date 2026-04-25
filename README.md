@@ -1,16 +1,24 @@
-# React + Vite
+# Tres en Raya 🇩🇴
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Nombre
+Tania Elizabeth Villa Dominguez
+matricula: 100647990
+## Descripción
+Juego de Tres en Raya con temática dominicana desarrollado con React.
+Dos jugadores se enfrentan: Taíno (X) vs Caribe (O) en un tablero 3x3.
+El juego detecta ganador y empate, guarda el marcador automáticamente
+y tiene sonidos de celebración cuando alguien gana.
+cuenta tambien con un diseño de platanos como parte del diseño del juego. 
 
-Currently, two official plugins are available:
+## Qué aprendí
+- Usar useState para manejar el estado del tablero y los turnos
+- Usar useEffect para guardar y recuperar datos con localStorage
+- Cómo detectar un ganador recorriendo combinaciones ganadoras
+- Cómo aplicar estilos con CSS para darle identidad dominicana al juego
+- Cómo usar la Web Audio API para agregar sonidos sin archivos externos
+- Cómo subir un proyecto a GitHub con Git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Qué parte fue más difícil
+La parte más difícil fue entender la lógica de detección del ganador,
+especialmente cómo recorrer las 8 combinaciones posibles y comparar
+los valores del tablero correctamente.
