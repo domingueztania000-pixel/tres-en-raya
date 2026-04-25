@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #002D62;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(206,17,38,0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(206,17,38,0.15) 0%, transparent 40%);
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: '🇩🇴';
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  font-size: 28px;
+  letter-spacing: 18px;
+  opacity: 0.18;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+body::after {
+  content: '🇩🇴';
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  font-size: 28px;
+  letter-spacing: 18px;
+  opacity: 0.18;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.juego {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  border: 4px solid #CE1126;
+  position: relative;
+  overflow: visible;
+}
+
+.juego::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+}
+
+h1 {
+  color: #002D62;
+  font-size: 28px;
+  margin-bottom: 4px;
+  margin-top: 12px;
+  font-family: 'Segoe UI Emoji', Arial, sans-serif;
+}
+
+.turno {
+  color: #CE1126;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.marcador {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
+  background: #002D62;
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+.marcador span {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 6px;
+  margin: 0 auto 20px;
+}
+
+.celda {
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  font-weight: bold;
+  border: 3px solid #002D62;
+  border-radius: 10px;
+  background: #f0f4ff;
+  cursor: pointer;
+  color: #002D62;
+  transition: transform 0.1s, background 0.15s;
+}
+
+.celda:hover {
+  background: #dce6ff;
+  transform: scale(1.05);
+}
+
+.btn-reiniciar {
+  background: #CE1126;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-reiniciar:hover {
+ background: #a00d1e;
+}
+
+.mensaje {
+  font-size: 20px;
+  font-weight: bold;
+  color: #CE1126;
+  margin-bottom: 12px;
+}
+
+.footer {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 1px;
+}
